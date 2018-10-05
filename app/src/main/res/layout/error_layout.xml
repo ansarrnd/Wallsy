@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sad_cloud"/>
+
+    <TextView
+        android:id="@+id/error_backend_textview_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_16"
+        android:maxWidth="320dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="@color/greyDark"
+        android:text="@string/error_backend_message_text"/>
+
+    <TextView
+        android:id="@+id/error_backend_textview_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/greyDark"
+        android:textSize="14sp"
+        android:text="XXX An Errorcode"/>
+
+    <TextView
+        android:id="@+id/error_backend_textview_check_backend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_16"
+        android:textColor="@color/greyDark"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:text="@string/error_backend_check_backend"/>
+
+</LinearLayout>
