@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
+import com.ansar.wallsy.topList.TopListFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -30,5 +31,10 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+        getSupportFragmentManager()
+                .beginTransaction()
+                .add(R.id.frame, TopListFragment.newInstance(), TopListFragment.class.getSimpleName())
+                .commit();
     }
 }

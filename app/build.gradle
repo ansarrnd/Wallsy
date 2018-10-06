@@ -61,8 +61,9 @@ dependencies {
 
     //Retrofit and Adapters
     implementation "com.squareup.retrofit2:retrofit:$retrofit"
-    implementation "com.squareup.retrofit2:converter-gson:$retrofit"
+    implementation "com.squareup.retrofit2:converter-scalars:$retrofit"
     implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit"
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
 
     //RxJava & RxAndroid
     implementation "io.reactivex.rxjava2:rxjava:$rxjava"
